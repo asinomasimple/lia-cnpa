@@ -1,8 +1,20 @@
+/*
+* COLORS
+*
+blue (menu): #3961af > compound orange E28133
+hover blue: #1b53c2
+bright light blue: #3c97eb
+*
+*/
+
 html{
       -webkit-font-smoothing: antialiased;
 }
 body{
   font-family: 'Istok Web', sans-serif;
+}
+p{
+  font-family: 'Lora', serif;
 }
 
 body > .container{
@@ -139,56 +151,55 @@ h1{
 
 }
 .aofm h3{
-  color:#3961af;
-  margin-top:-8px;
-}
-.aofm-partner{
   background:#3961af;
+  background:#E28133;
+  background:#3A325C;
+  background:#2A167B;
   color:#fff;
-  margin-left:5px;
-  -webkit-box-shadow: 0 1px 3px 1px #dadacf;
-  box-shadow: 0 1px 3px 1px #dadacf;
-  display:flex;
+  margin-top:-8px;
+  font-weight:700;
+  padding:10px;
 }
-  .aofm-partner figure{
-    position:relative;
+.aofm h4{
+  color:#2A167B;
+  font-weight:700;
+}
+.aofm-person{
+  position:relative;
+  background:#fff;
+  height:240px;
+  padding:0;
+  float:left;
+  -webkit-box-shadow:0 1px 3px 1px #ddd;
+  box-shadow:0 1px 3px 1px #ddd;
+}
+.aofm-person + .aofm-person{
+  margin-left:35px;
+}
+  .aofm-person figure{
+    display:block;
+    text-align: center;
   }
-    .aofm-partner figure img{
-      position: relative;
-      display: inline-block;
+    .aofm-person figure img{
+      width:100%;
     }
-    .aofm-partner figure figcaption{
-      position: relative;
-      display:inline-block;
-      font-size:24px;
-      font-weight:bold;
-      vertical-align: top;
-      margin-left:10px;
+    .aofm-person figure figcaption{
+      position:absolute;
+      bottom:0;
+      width:100%;
+      padding:10px;
+      background:#fff;
+      -webkit-box-sizing:border-box;
+      -moz-box-sizing:border-box;
+      box-sizing:border-box;
+      color:#E28133;
+      font-weight:700;
     }
-    .aofm-partner figure figcaption .aofm-partner-label{
-      font-size:12px;
-      font-weight:normal;
-      padding:none;
-    }
-  .aofm-members{
-    margin-top:10px;
-    margin-left:10px;
-    padding:5px;
-    background:#fff;
-    -webkit-box-shadow: 0 1px 3px 1px #dadacf;
-    box-shadow: 0 1px 3px 1px #dadacf;
-
-  }
-    .aofm-members .aofm-members-label{
+    .aofm-members-label{
       text-transform: uppercase;
       padding-top:5px;
       color:#3961af;
       font-weight:bold;
-    }
-    .aofm-members figure{
-      text-align: center;
-    }
-    .aofm-members figcaption{
-      font-weight: bold;
-      margin-top:5px;
+      font-family: "Lato", sans-serif;
+      margin-top: 10px;
     }
