@@ -213,3 +213,59 @@ font-family: 'Istok Web', sans-serif;
       font-family: "Lato", sans-serif;
       margin-top: 10px;
     }
+/* members */
+.person{
+  /*position:relative;
+  background:#fff;
+  height:190px;
+  padding:0;*/
+  float:left;
+  background:#fff;
+  -webkit-box-shadow:0 1px 3px 1px #ddd;
+  box-shadow:0 1px 3px 1px #ddd;
+  width:80%;
+  }
+  .person p{
+  font-family: 'Istok Web', sans-serif;
+}
+
+  .person figure{
+    float:left;
+  }
+    .person figure img{
+      float:left;
+
+    }
+    .person figure figcaption{
+      float:left;
+      padding:10px;
+      -webkit-box-sizing:border-box;
+      -moz-box-sizing:border-box;
+      box-sizing:border-box;
+      background: #fff;
+    }
+    .person figure figcaption h1{
+      font-size:16px;
+      color:#3961af;
+      margin-top:5px;
+    }
+    .person figure figcaption .entity{
+      padding-bottom: 6px;
+      color: rgb(98, 98, 98);
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-size: 14px;
+      border-bottom: 1px solid rgb(105, 184, 226);
+      overflow: hidden;
+    }
+    .person figure figcaption .expertise{
+      width:250px;
+      text-align: left;
+    }
+    .person figure figcaption .email{
+      color:#3c97eb;
+    }
+    .person figure figcaption .link{
+      text-transform: uppercase;
+      font-weight:700;
+    }
