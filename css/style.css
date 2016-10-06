@@ -8,15 +8,20 @@ bright light blue: #3c97eb
 */
 
 html{
-      -webkit-font-smoothing: antialiased;
+ -webkit-font-smoothing: antialiased;
 }
 body{
   font-family: 'Istok Web', sans-serif;
+   -webkit-font-smoothing: antialiased;
+   font-size: 1.5em;
 }
-p,ul{
+p{
   font-family: 'Lora', serif;
   text-align: justify;
-      text-justify: inter-word;
+  text-justify: inter-word;
+  font-size:16px;
+  line-height: 1.5;
+  margin-bottom: 1em;
 }
 
 body > .container{
@@ -29,6 +34,28 @@ h1, h2, h3, h4, h5, h6{
 h1{
   font-size: 30px;
   margin:10px 0 5px;
+  color:#3961af;
+}
+h2{
+  color:#1b53c2;
+  margin-bottom: 1em;
+}
+
+
+a.button{
+  webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  font-weight:normal;
+  font-size:14px;
+  line-height:19px;
+  display:block;
+  text-align:center;
+  border-size:border-box;
+  border:0;
+  padding:10px;
+  margin-bottom:5px;
+  text-decoration:none;
+  cursor:pointer;
 }
 
 .navbar{
@@ -51,8 +78,10 @@ font-family: 'Istok Web', sans-serif;
 #header-title {
   font-size:30px;
   font-weight:700;
-  padding-top:30px;
   margin-left:15px;
+  width:450px;
+  margin-top:5px;
+  color:#3961af;
 }
 /*
  * SECO?NDARY NAV
@@ -72,6 +101,11 @@ font-family: 'Istok Web', sans-serif;
 #secondary-nav > li > a:hover, #secondary-nav > li > a:focus{
   background:#007df2;
   color:#fff;
+}
+
+#flags{
+  float:right;
+  margin-right: 15px;
 }
 /*
  * PRIMARY NAV
@@ -98,9 +132,10 @@ font-family: 'Istok Web', sans-serif;
   border-radius:2px;
   box-shadow:  0 1px 4px rgba(0, 0, 0, 0.15), 0 1.5px 6px rgba(0, 0, 0, 0.15);
 }
-#primary-nav-menu li{
+#primary-nav-menu > .nav > li{
   border-right:1px solid #0c40a6;
 }
+
   /* rollover */
   #primary-nav-menu .nav > li > a:hover, #primary-nav-menu  .nav > li > a:focus{
     background: #1b53c2;
@@ -132,7 +167,7 @@ font-family: 'Istok Web', sans-serif;
   border-top:1px dashed #e6e6e6;
   background: #fff;
   margin:2px 0 0;
-  padding:5px;
+  padding:5px 0;
 }
 
 .panel-default > .panel-heading{
@@ -148,13 +183,18 @@ font-family: 'Istok Web', sans-serif;
   position: absolute;
 }
 .thumbnail.right-caption > .caption {
-    padding: 4px;
-    margin-left:70px;
+    padding: 0 5px;
+    margin-left:75px;
+    text-align: left;
 }
-​.thumbnail.right-caption > .caption > h3{
-    font-size:14px !important;
+.thumbnail.right-caption > .caption > h3{
+    font-size:16px !important;
+    margin-top:0;
+    color:#3c97eb;
 }
-
+.thumbnail.right-caption > .caption > p{
+  text-align: left;
+}
 
 /* Activity of Members .aofm */
 .aofm{
@@ -173,6 +213,7 @@ font-family: 'Istok Web', sans-serif;
 .aofm h4{
   color:#2A167B;
   font-weight:700;
+  margin-top:25px;
 }
 .aofm-person{
   position:relative;
@@ -183,8 +224,18 @@ font-family: 'Istok Web', sans-serif;
   -webkit-box-shadow:0 1px 3px 1px #ddd;
   box-shadow:0 1px 3px 1px #ddd;
 }
+.aofm-person:first-child{
+  margin-right:20px;
+  -webkit-box-shadow:0 2px 4px 2px #c9c9c9;
+  box-shadow:0 2px 4px 2px #c9c9c9;
+}
+.aofm-person-exemption{
+  margin-right:10px !important;
+  -webkit-box-shadow:0 1px 3px 1px #ddd !important;
+  box-shadow:0 1px 3px 1px #ddd !important;
+}
 .aofm-person + .aofm-person{
-  margin-left:35px;
+  margin-left:20px;
 }
   .aofm-person figure{
     display:block;
@@ -204,6 +255,7 @@ font-family: 'Istok Web', sans-serif;
       box-sizing:border-box;
       color:#E28133;
       font-weight:700;
+      line-height: 14px;
     }
     .aofm-members-label{
       text-transform: uppercase;
@@ -243,29 +295,56 @@ font-family: 'Istok Web', sans-serif;
       -moz-box-sizing:border-box;
       box-sizing:border-box;
       background: #fff;
+      font-size:13px;
+      width:280px;
     }
     .person figure figcaption h1{
       font-size:16px;
       color:#3961af;
-      margin-top:5px;
+      margin-top:3px;
     }
     .person figure figcaption .entity{
-      padding-bottom: 6px;
+      padding-bottom: 4px; margin-bottom: 3px;
       color: rgb(98, 98, 98);
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      font-size: 14px;
       border-bottom: 1px solid rgb(105, 184, 226);
       overflow: hidden;
+      font-weight: 700;
     }
     .person figure figcaption .expertise{
-      width:250px;
       text-align: left;
+      margin-bottom: 3px;
+      font-style: italic;
     }
     .person figure figcaption .email{
       color:#3c97eb;
+      margin-bottom: 3px;
     }
     .person figure figcaption .link{
       text-transform: uppercase;
       font-weight:700;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      margin-top: 2px;
     }
+ol.publications li{
+  margin-bottom:2em;
+  color:#666;
+}
+  ol.publications li span.authors{
+
+    font-weight:700;
+    color:#3961af;
+  }
+  ol.publications li span.title{
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-style:italic;
+    color:#000;
+  }
+
+
+  #page-news blockquote{
+    color:#E28133;
+    font-style:italic;
+    font-size:26px;
+  }
